@@ -3,59 +3,60 @@ import glob
 from pathlib import Path
 import random
 
+def readSvg():
+    return Path('./germanyEmpty/Deutschland.svg').read_text()
 
-title = 'Deutschlands Bundesländer'
+def highlight(name):
+    return """
+    <script type="text/javascript">
+        document.getElementById("DUMMY").setAttributeNS(null, "fill", "#f00")
+    </script>    
+        """.replace('DUMMY', name)
 
-aDeck = genanki.Deck(
-    2059400110,
-    title)
+def hightlightOnMap(name):
+    return readSvg() + highlight(name)
 
-# location to name
-aModel = genanki.Model(
-    1607392319,
-    title,
-    fields=[
-        {'name': 'Question'},
-        {'name': 'Answer'},
-    ],
-    templates=[
-        {
-            'name': 'Card Number',
-            'qfmt': '{{Question}}',
-            'afmt': '{{Answer}}',
-        },
-    ],
-    css='.card {font-family: arial; font-size: 20px; text-align: center; color: black; background-color: white; }'
-)
 
-filenames = glob.glob('./federalStates/*.svg')
-shuffledFilesnames = random.sample(filenames, len(filenames))
+def generateAnki():
+    title = 'Deutschlands Bundesländer'
 
-# location to name
-for filename in shuffledFilesnames:
-    federalState = Path(filename).stem
+    aDeck = genanki.Deck(
+        2059400110,
+        title)
+
+    # location to name
+    aModel = genanki.Model(
+        1607392319,
+        title,
+        fields=[
+            {'name': 'Question'},
+            {'name': 'Answer'},
+        ],
+        templates=[
+            {
+                'name': 'Card Number',
+                'qfmt': '{{Question}}',
+                'afmt': '{{Answer}}',
+            },
+        ],
+        css='.card {font-family: arial; font-size: 20px; text-align: center; color: black; background-color: white; }'
+    )
+
     aDeck.add_note(
         genanki.Note(
             model=aModel,
             fields=[
-                'Wie heißt das rot markierte Bundesland?<br><br><img src="' + federalState + '.svg">',
-                'Wie heißt das rot markierte Bundesland?<br><br><img src="' + federalState + '.svg"><br><br><U>' + federalState + '</U>']
+                'Wie heisst das rot markierte Bundesland?<br><br>' + hightlightOnMap('MECKLENBURGVORPOMMERN'),
+                'Wie heisst das rot markierte Bundesland?<br><br>' + hightlightOnMap('MECKLENBURGVORPOMMERN') + '<hr id=answer>MECKLENBURGVORPOMMERN']
         ))
 
-# name to location
-for filename in shuffledFilesnames:
-    federalState = Path(filename).stem
-    aDeck.add_note(
-        genanki.Note(
-            model=aModel,
-            fields=[
-                'Wo liegt das Bundesland <U>' + federalState + '</U>?<br><br><img src="Deutschland.svg">',
-                'Wo liegt das Bundesland <U>' + federalState + '</U>?<br><br><img src="' + federalState + '.svg">']
-        ))
+    aPackage = genanki.Package(aDeck)
+    aPackage.write_to_file(title + '.apkg')
 
 
-filenames.append('./germanyEmpty/Deutschland.svg')
+def main():
+    generateAnki()
 
-aPackage = genanki.Package(aDeck)
-aPackage.media_files = filenames
-aPackage.write_to_file(title + '.apkg')
+
+if __name__ == "__main__":
+    main()
