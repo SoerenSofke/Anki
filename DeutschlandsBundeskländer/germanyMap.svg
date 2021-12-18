@@ -310,7 +310,7 @@ function GetParams()
 
   setTimeout(function() {
     	svg.setAttribute('visibility','visible');  
-    }, 20)
+    }, 1000)
 }
 
 
