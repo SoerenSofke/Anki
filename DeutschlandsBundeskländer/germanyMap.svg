@@ -308,9 +308,9 @@ function GetParams()
 
   let svg = document.getElementById("svgpoint")
 
-  svg.addEventListener('load', () => {
-  	svg.setAttribute('visibility','visible');
-  }) 
+  setTimeout(function() {
+    	svg.setAttribute('visibility','visible');  
+    }, 20)
 }
 
 
