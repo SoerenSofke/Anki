@@ -306,11 +306,10 @@ function GetParams()
 	GetIdRefs( eachParam[1], eachParam[2] );
   }
 
-  let svg = document.getElementById("svgpoint")
-
-  setTimeout(function() {
-    	svg.setAttribute('visibility','visible');  
-    }, 1000)
+  const svg = document.getElementById("svgpoint")
+  svg.addEventListener('load', () => {
+    svg.setAttribute('visibility','visible');  
+  })
 }
 
 
