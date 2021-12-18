@@ -307,7 +307,10 @@ function GetParams()
   }
 
   let svg = document.getElementById("svgpoint")
-  svg.setAttribute('visibility','visible');  
+
+  svg.addEventListener('load', () => {
+  	svg.setAttribute('visibility','visible');
+  }) 
 }
 
 
