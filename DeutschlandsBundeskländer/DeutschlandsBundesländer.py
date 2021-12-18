@@ -45,12 +45,16 @@ def generateAnki():
     aDeck.add_note(
         genanki.Note(
             model=aModel,
-            fields=[
-                'Wie heisst das rot markierte Bundesland?<br><br>' + hightlightOnMap('MECKLENBURGVORPOMMERN'),
-                'Wie heisst das rot markierte Bundesland?<br><br>' + hightlightOnMap('MECKLENBURGVORPOMMERN') + '<hr id=answer>MECKLENBURGVORPOMMERN']
+            fields=[                
+                'F:<br><embed type="image/svg+xml" src="button.svg?fill=green" />',
+                'A:<br><embed type="image/svg+xml" src="button.svg?fill=green" />',
+                ]
         ))
 
+    filenames = ['button.svg']
+
     aPackage = genanki.Package(aDeck)
+    aPackage.media_files = filenames
     aPackage.write_to_file(title + '.apkg')
 
 
