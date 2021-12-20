@@ -42,20 +42,31 @@ def generateAnki():
         css='.card {font-family: arial; font-size: 20px; text-align: center; color: black; background-color: white; }'
     )
 
-    question = '<style>#State_Niedersachsen {fill: crimson;}</style>' + Path('map.svg').read_text()
-    answer = '<style>#State_Niedersachsen {fill: crimson;}</style>' + Path('map.svg').read_text()
+    question2 = """
+<style>#State_Niedersachsen {fill: crimson;} #MOUNTAINS {visibility: visible;} #WATERS {visibility: visible;}</style>
+<div id="inline-svg"style="border:1px solid black;"></div>
+<script src="https://rawcdn.githack.com/SoerenSofke/Anki/feature/setSvgAttribute/DeutschlandsBundeskl%C3%A4nder/inline-svg.js"></script>
+"""
 
     aDeck.add_note(
         genanki.Note(
             model=aModel,
             fields=[                
-                'Question <br>' + question,
-                'Answer <br>' + answer,
+                'Question1 <br>' + question2,
+                'Answer1 <br>' + question2,
                 ]
         ))
 
+    aDeck.add_note(
+        genanki.Note(
+            model=aModel,
+            fields=[                
+                'Question2 <br>' + question2,
+                'Answer2 <br>' + question2,
+                ]
+        ))        
+
     aPackage = genanki.Package(aDeck)
-    aPackage.media_files = ['map.svg']
     aPackage.write_to_file(title + '.apkg')
 
 
