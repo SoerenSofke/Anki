@@ -25,8 +25,8 @@ def generateAnki():
         templates=[
             {
                 'name': 'Card Number',
-                'qfmt': '{{Question}}<br><br>{{MapStyleQ}}<div id="inline-svg"></div><script src="https://raw.githack.com/SoerenSofke/Anki/feature/setSvgAttribute/DeutschlandsBundeskl%C3%A4nder/inline-svg.js"></script>',
-                'afmt': '{{Question}}<br><br>{{MapStyleA}}<div id="inline-svg"></div><script src="https://raw.githack.com/SoerenSofke/Anki/feature/setSvgAttribute/DeutschlandsBundeskl%C3%A4nder/inline-svg.js"></script><hr id=answer><u>{{Answer}}</u>',
+                'qfmt': '{{Question}}<br><br>{{MapStyleQ}}<div id="inline-svg"></div><script src="https://rawcdn.githack.com/SoerenSofke/Anki/d5ac6839e4ba1a5e1e5187281b15eb830b78a51e/DeutschlandStadtLandFluss/inline-svg.js"></script>',
+                'afmt': '{{Question}}<br><br>{{MapStyleA}}<div id="inline-svg"></div><script src="https://rawcdn.githack.com/SoerenSofke/Anki/d5ac6839e4ba1a5e1e5187281b15eb830b78a51e/DeutschlandStadtLandFluss/inline-svg.js"></script><hr id=answer><u>{{Answer}}</u>',
             },
         ],
         css='''
