@@ -59,7 +59,7 @@ def generateAnki():
         "Thüringen", 
         "Mecklenburg-Vorpommern", 
         "Bayern", 
-        "Baden-Wuerttemberg", 
+        "Baden-Württemberg", 
         "Sachsen-Anhalt", 
     ]
     random.shuffle(states)
