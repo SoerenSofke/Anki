@@ -29,7 +29,7 @@ def generateAnki():
         css='''
         .card {
             font-family: arial; 
-            font-size: 70vh; 
+            font-size: 30vh; 
             font-weight: bold;
             text-align: center; 
             color: black; 
@@ -43,7 +43,6 @@ def generateAnki():
     )
 
     filenames = glob.glob('*.svg')
-    print(filenames)
 
     for filename in filenames:        
         question = filename[0]
