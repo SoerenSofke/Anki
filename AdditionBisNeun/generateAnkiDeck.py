@@ -17,29 +17,29 @@ def generateAnki():
         1607392321,
         title,
         fields=[
-            {'name': 'Question'},
-            {'name': 'Answer'},
+            {'name': 'Text'},
         ],
         templates=[
             {
                 'name': 'Card Number',
-                'qfmt': '{{Question}}',
-                'afmt': '{{Answer}}',
+                'qfmt': '<br><br><br>{{cloze:Text}}',
+                'afmt': '<br><br><br>{{cloze:Text}}',
             },
         ],
         css='''
         .card {
             font-family: arial; 
-            font-size: 10vh; 
+            font-size: 8vw; 
             font-weight: bold;
             text-align: center; 
             color: black; 
             background-color: white; 
         }
 
-        hr#answer {
-            visibility: hidden;
-        }            
+        .cloze {
+            font-weight: bold;
+            color: blue;
+        }           
         '''
     )
 
@@ -49,7 +49,7 @@ def generateAnki():
 
             aDeck.add_note(
                 genanki.Note(
-                    model=genanki.CLOZE_MODEL,
+                    model=aModel,
                     fields=[equation]
                 ))
 
