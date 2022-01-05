@@ -1,0 +1,296 @@
+der Abend
+acht
+alle (alles)
+alt (älter)
+die Ampel
+antworten
+der Apfel
+der April
+arbeiten
+der Arm
+der Ast
+die Aufgabe
+das Auge
+der August
+das Auto
+das Baby
+baden
+der Ball
+die Bank
+der Bauch
+bauen
+der Baum
+das Bein
+bewegen (bewegt)
+bezahlen
+die Biene
+das Bild
+die Birne
+bitten
+das Blatt
+blau
+bleiben (bleibt)
+die Blume
+blühen (blüht)
+die Blüte
+der Boden
+böse
+braun
+bringen (bringt)
+das Brot
+der Brief
+der Bruder
+das Buch
+bunt
+der Busch
+der Cent
+der Computer
+danken
+denken
+der Dezember
+der Dienstag
+der Donnerstag
+drei
+dunkel
+das Ei (die Eier)
+eins
+elf
+die Eltern
+das Ende
+eng
+die Ente
+die Erde
+essen (isst)
+die Eule
+der Euro
+fahren (fährt)
+fallen (fällt)
+die Familie
+fangen (fängt)
+der Februar
+fein
+das Feld
+das Fenster
+finden
+der Finger
+fliegen (fliegt)
+der Flügel
+flüssig
+fragen (fragt)
+die Frau
+der Freitag
+fremd (der/die Fremde)
+freuen (die Freude)
+der Freund (die Freundin)
+frisch
+die Frucht
+der Frühling
+füllen
+fünf
+der Fuß
+der Garten
+geben (gibt)
+gehen (geht)
+gelb
+das Geld
+das Gemüse
+das Gesicht
+gestern
+gesund
+das Gras
+groß
+grün
+gut
+die Haare
+haben (hat)
+der Hals
+halten (hält)
+die Hand
+hart
+der Hase
+das Haus
+die Haut
+die Hecke
+heiß
+heißen
+helfen (hilft, die Hilfe)
+hell
+das Hemd
+der Herbst
+der Herr
+heute
+die Hexe
+der Himmel
+hören
+die Hose
+der Hund
+hundert
+der Igel
+das Jahr
+der Januar
+der Juli
+der Junge
+der Juni
+der Käfer
+der Kalender
+kalt (die Kälte)
+die Katze
+kaufen
+das Kind
+die Klasse
+das Kleid
+klein
+kommen
+können (kann)
+der Kopf
+der Körper
+krank
+laufen (läuft)
+laut
+leben (lebt)
+legen (legt)
+leicht
+leise
+lernen
+lesen (liest)
+die Leute
+das Licht
+lieb (lieben)
+liegen (liegt)
+machen
+das Mädchen
+der Mai
+malen
+der Mann
+der März
+die Maus
+die Minute
+der Mittwoch
+der Monat
+der Montag
+der Morgen
+der Mund
+müssen (muss)
+die Mutter
+die Nacht
+der Name
+die Nase
+der Nebel
+nehmen (nimmt)
+neu
+neun
+der November
+das Obst
+das Ohr
+der Oktober
+der Onkel
+Ostern
+das Papier
+das Pferd
+pflanzen
+pflegen (pflegt)
+der Platz
+die Puppe
+quaken
+die Raupe
+rechnen
+reden
+der Regen
+reich
+reisen
+der Rock
+rollen
+rot
+der Rücken
+rufen
+der Saft
+sagen (sagt)
+das Salz
+der Samstag
+der Sand (sandig)
+der Satz
+schauen
+scheinen
+die Schere
+schlafen
+schlagen
+der Schnee
+schneiden
+schnell
+schön
+schreiben (schreibt)
+die Schule
+schwarz
+die Schwester
+sechs
+sehen (sieht)
+die Seife
+die Sekunde
+der September
+sieben
+singen (singt)
+sitzen (sitzt)
+der Sohn
+sollen
+der Sommer
+die Sonne
+der Sonntag
+sparen
+der Spaziergang
+spielen
+der Sport
+die Stange
+stehen (steht)
+stellen
+der Stift
+still
+der Strauch
+die Stunde
+suchen
+der Tag
+die Tante
+die Tasche
+der Tee
+das Telefon
+das Tier
+die Tochter
+tragen (trägt)
+trinken
+turnen
+üben (übt)
+die Uhr
+der Vater
+der Verkehr
+versuchen
+vier
+der Vogel
+warm (die Wärme)
+warten
+waschen (wäscht)
+das Wasser
+der Weg
+Weihnachten
+weiß
+weit
+werden (wird)
+das Wetter
+die Wiese
+der Wind
+der Winter
+die Woche
+wohnen
+wollen (will)
+das Wort
+wünschen
+die Wurzel
+die Zahl (zählen)
+der Zahn
+die Zehe
+zehn
+zeigen (zeigt)
+die Zeit
+das Zimmer
+der Zucker
+zwei
+die Zwiebel
+zwölf
